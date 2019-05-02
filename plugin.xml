@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Gold System" version="5.0.1" lan="LAN_PLUGIN_GOLD_SYS__PM_01" compatibility="2.0" installRequired="true" >
+ 
+	<author name="Father Barry" url="http://www.e107gold.com" email="noone@example.com" />
+	<summary lan="LAN_PLUGIN_GOLD_SYS__PM_01">Control centre for Gold System.</summary>
+    <description lan="LAN_PLUGIN_GOLD_SYS__PM_02">Gold rewards system for e107. The core gold plugin for for all gold enabled plugins.</description>
+    <category>content</category>
+	<readMe>admin_readme.php</readMe>
+	<folder>gold_system</folder>
+	<keywords>
+		<word>gold</word>
+		<word>system</word>
+		<word>master</word>
+	</keywords>
+	<screenshots>
+		<image></image>
+	</screenshots>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure Gold System Plugin' icon='images/gold_32.png' iconSmall='images/gold_16.png' icon128="" primary='true' >LAN_PLUGIN_GOLD_SYS__PM_CONFIG</link>
+		<link url="admin_config.php?mode=options" description="Gold Preferences" icon="manage" >Gold Preferences</link>
+	</adminLinks>
+	<siteLinks>
+		<link url="{e_PLUGIN}gold_system/index.php" perm='everyone' sef='goldSystem'>Gold Centre</link>
+	</siteLinks>
+	<logLanguageFile filename='languages/--LAN--_log.php' />
+	<upgradeCheck url="http://www.e107gold.com" method="xml_list" id="Gold System" />
+	<pluginPrefs>
+		<pref name="viewClass">0</pref>
+		<pref name="perPage">20</pref>
+	</pluginPrefs>
+	<userClasses>
+		<class name="Gold Member" description="User of Gold System" />		
+		<class name="Gold Manager" description="Manager of Gold System" />		
+	</userClasses>
+	<mediaCategories>
+		<category type="image">Gold System</category>
+	</mediaCategories>
+	<depends>
+	    <PHP name='core' min_version='5.5' />
+	    <MySQL name='server' min_version='4' />
+  </depends>
+</e107Plugin>

@@ -1,0 +1,5 @@
+#ajax_listOfOptions{position:absolute;width:175px;height:250px;overflow:auto;border:1px solid #317082;background-color:#FFF;text-align:left;font-size:0.9em;z-index:100;}
+#ajax_listOfOptions div{margin:1px;padding:1px;cursor:pointer;font-size:0.9em;}
+#ajax_listOfOptions .optionDiv{}
+#ajax_listOfOptions .optionDivSelected{background-color:#317082;color:#FFF;}
+#ajax_listOfOptions_iframe{background-color:#F00;position:absolute;z-index:5;}
